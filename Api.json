@@ -447,7 +447,7 @@
 							"script": {
 								"exec": [
 									"pm.test(\"Ensure User Data is Deleted\", () => {\r",
-									"    pm.expect(pm.response.code).to.equal(404);\r",
+									"    pm.expect(pm.response.code).to.equal(401);\r",
 									"    let response =  pm.response.json();\r",
 									"    pm.expect(response.data.message).to.equal(\"Resource not found\");\r",
 									"})"
